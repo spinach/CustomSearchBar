@@ -13,6 +13,9 @@
 		C0622FCA1B7737790027A684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0622FC91B7737790027A684 /* Images.xcassets */; };
 		C0622FCD1B7737790027A684 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0622FCB1B7737790027A684 /* LaunchScreen.xib */; };
 		C0622FD91B77377A0027A684 /* CustomSearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0622FD81B77377A0027A684 /* CustomSearchBarTests.swift */; };
+		C0622FE31B77386F0027A684 /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = C0622FE21B77386F0027A684 /* countries.txt */; };
+		C0622FE51B7769710027A684 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0622FE41B7769710027A684 /* CustomSearchBar.swift */; };
+		C0622FE71B776B2C0027A684 /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0622FE61B776B2C0027A684 /* CustomSearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		C0622FD21B77377A0027A684 /* CustomSearchBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSearchBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0622FD71B77377A0027A684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0622FD81B77377A0027A684 /* CustomSearchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBarTests.swift; sourceTree = "<group>"; };
+		C0622FE21B77386F0027A684 /* countries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.txt; sourceTree = "<group>"; };
+		C0622FE41B7769710027A684 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		C0622FE61B776B2C0027A684 /* CustomSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		C0622FB41B7737790027A684 = {
 			isa = PBXGroup;
 			children = (
+				C0622FE21B77386F0027A684 /* countries.txt */,
 				C0622FBF1B7737790027A684 /* CustomSearchBar */,
 				C0622FD51B77377A0027A684 /* CustomSearchBarTests */,
 				C0622FBE1B7737790027A684 /* Products */,
@@ -79,6 +86,8 @@
 			children = (
 				C0622FC21B7737790027A684 /* AppDelegate.swift */,
 				C0622FC41B7737790027A684 /* ViewController.swift */,
+				C0622FE41B7769710027A684 /* CustomSearchBar.swift */,
+				C0622FE61B776B2C0027A684 /* CustomSearchController.swift */,
 				C0622FC61B7737790027A684 /* Main.storyboard */,
 				C0622FC91B7737790027A684 /* Images.xcassets */,
 				C0622FCB1B7737790027A684 /* LaunchScreen.xib */,
@@ -156,14 +165,18 @@
 		C0622FB51B7737790027A684 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Appcoda;
 				TargetAttributes = {
 					C0622FBC1B7737790027A684 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0810;
 					};
 					C0622FD11B77377A0027A684 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0810;
 						TestTargetID = C0622FBC1B7737790027A684;
 					};
 				};
@@ -195,6 +208,7 @@
 				C0622FC81B7737790027A684 /* Main.storyboard in Resources */,
 				C0622FCD1B7737790027A684 /* LaunchScreen.xib in Resources */,
 				C0622FCA1B7737790027A684 /* Images.xcassets in Resources */,
+				C0622FE31B77386F0027A684 /* countries.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0622FE71B776B2C0027A684 /* CustomSearchController.swift in Sources */,
 				C0622FC51B7737790027A684 /* ViewController.swift in Sources */,
 				C0622FC31B7737790027A684 /* AppDelegate.swift in Sources */,
+				C0622FE51B7769710027A684 /* CustomSearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,14 +284,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -312,8 +331,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -332,6 +353,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -342,7 +364,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomSearchBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -352,7 +376,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CustomSearchBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -370,7 +396,9 @@
 				);
 				INFOPLIST_FILE = CustomSearchBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomSearchBar.app/CustomSearchBar";
 			};
 			name = Debug;
@@ -385,7 +413,9 @@
 				);
 				INFOPLIST_FILE = CustomSearchBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomSearchBar.app/CustomSearchBar";
 			};
 			name = Release;
@@ -409,6 +439,7 @@
 				C0622FDE1B77377A0027A684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0622FDF1B77377A0027A684 /* Build configuration list for PBXNativeTarget "CustomSearchBarTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +448,7 @@
 				C0622FE11B77377A0027A684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

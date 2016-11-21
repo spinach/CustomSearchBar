@@ -1,9 +1,9 @@
 //
-//  CustomSearchBarTests.swift
-//  CustomSearchBarTests
+//  RatingControl.swift
+//  ImplementCustomControl
 //
-//  Created by Gabriel Theodoropoulos on 8/9/15.
-//  Copyright (c) 2015 Appcoda. All rights reserved.
+//  Created by Guy Daher on 11/19/16.
+//  Copyright © 2016 guydaher. All rights reserved.
 //
 
 import UIKit
@@ -28,7 +28,7 @@ class CustomSearchBarTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measure() {
             // Put the code you want to measure the time of here.
         }
     }
