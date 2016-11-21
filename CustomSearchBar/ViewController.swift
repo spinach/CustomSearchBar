@@ -74,6 +74,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.textLabel?.text = dataArray[indexPath.row]
         }
         
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor(red: 44.0 / 255.0, green: 98.0 / 255.0, blue: 135.0 / 255.0, alpha: 1)
+        
         return cell
     }
     

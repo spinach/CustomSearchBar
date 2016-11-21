@@ -26,7 +26,7 @@ class CustomSearchBar: UISearchBar {
             let searchField: UITextField = (subviews[0] ).subviews[index] as! UITextField
             
             // Set its frame.
-            searchField.frame = CGRect(x: 5.0, y: 5.0, width: frame.size.width - 10.0, height: frame.size.height - 10.0)
+            searchField.frame = CGRect(x: 5.0, y: 8, width: frame.size.width - 10.0, height: frame.size.height - 16.0)
             
             // Set the font and text color of the search field.
             searchField.font = preferredFont
@@ -60,7 +60,7 @@ class CustomSearchBar: UISearchBar {
         shapeLayer.strokeColor = UIColor(red: 70.0 / 255.0, green: 174.0 / 255.0, blue: 218.0 / 255.0, alpha: 1).cgColor
         shapeLayer.lineWidth = 2.5
         
-        layer.addSublayer(shapeLayer)
+        //layer.addSublayer(shapeLayer)
         
         super.draw(rect)
     }
